@@ -4,12 +4,13 @@ import { rooms } from '@/lib/rooms';
 import RoomCard from '@/components/RoomCard';
 import { Bed, Bath, Wifi, Tv, Coffee, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import sunsetHeroImage from '@assets/sunset_rooms_hero.png';
 
 const Rooms: React.FC = () => {
   return (
     <>
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1611892440504-42a792e24d32?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+        backgroundImage={sunsetHeroImage} 
         title="Our Rooms"
         subtitle="Comfort & Elegance by the Sea"
       />
