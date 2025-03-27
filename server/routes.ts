@@ -48,17 +48,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
       };
       
       // Send the email
-      await transporter.sendMail(mailOptions);
-      
-      // Return success response
-      res.status(200).json({ message: "Message sent successfully" });
+      console.log("Attempting to send email with nodemailer...");
+      try {
+        const info = await transporter.sendMail(mailOptions);
+        console.log("Email sent successfully:", info.messageId);
+        
+        // Return success response
+        res.status(200).json({ message: "Message sent successfully", messageId: info.messageId });
+      } catch (emailError) {
+        console.error("Nodemailer error:", emailError);
+        throw emailError;
+      }
     } catch (error) {
       console.error("Error sending contact form:", error);
       
       if (error instanceof z.ZodError) {
         res.status(400).json({ message: "Invalid form data", errors: error.errors });
       } else {
-        res.status(500).json({ message: "Failed to send message. Please try again later." });
+        res.status(500).json({ 
+          message: "Failed to send message. Please try again later.",
+          error: error instanceof Error ? error.message : String(error)
+        });
       }
     }
   });
@@ -108,17 +118,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
       };
       
       // Send the email
-      await transporter.sendMail(mailOptions);
-      
-      // Return success response
-      res.status(200).json({ message: "Breakfast request sent successfully" });
+      console.log("Attempting to send breakfast request email with nodemailer...");
+      try {
+        const info = await transporter.sendMail(mailOptions);
+        console.log("Breakfast request email sent successfully:", info.messageId);
+        
+        // Return success response
+        res.status(200).json({ message: "Breakfast request sent successfully", messageId: info.messageId });
+      } catch (emailError) {
+        console.error("Nodemailer error:", emailError);
+        throw emailError;
+      }
     } catch (error) {
       console.error("Error sending breakfast request:", error);
       
       if (error instanceof z.ZodError) {
         res.status(400).json({ message: "Invalid form data", errors: error.errors });
       } else {
-        res.status(500).json({ message: "Failed to send request. Please try again later." });
+        res.status(500).json({ 
+          message: "Failed to send request. Please try again later.",
+          error: error instanceof Error ? error.message : String(error)
+        });
       }
     }
   });
@@ -170,17 +190,27 @@ export async function registerRoutes(app: Express): Promise<Server> {
       };
       
       // Send the email
-      await transporter.sendMail(mailOptions);
-      
-      // Return success response
-      res.status(200).json({ message: "Booking inquiry sent successfully" });
+      console.log("Attempting to send booking inquiry email with nodemailer...");
+      try {
+        const info = await transporter.sendMail(mailOptions);
+        console.log("Booking inquiry email sent successfully:", info.messageId);
+        
+        // Return success response
+        res.status(200).json({ message: "Booking inquiry sent successfully", messageId: info.messageId });
+      } catch (emailError) {
+        console.error("Nodemailer error:", emailError);
+        throw emailError;
+      }
     } catch (error) {
       console.error("Error sending booking inquiry:", error);
       
       if (error instanceof z.ZodError) {
         res.status(400).json({ message: "Invalid form data", errors: error.errors });
       } else {
-        res.status(500).json({ message: "Failed to send inquiry. Please try again later." });
+        res.status(500).json({ 
+          message: "Failed to send inquiry. Please try again later.",
+          error: error instanceof Error ? error.message : String(error)
+        });
       }
     }
   });

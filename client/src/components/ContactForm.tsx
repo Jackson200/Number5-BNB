@@ -33,17 +33,27 @@ const ContactForm: React.FC = () => {
 
   const onSubmit = async (data: FormValues) => {
     try {
-      await apiRequest('POST', '/api/contact', data);
+      const response = await apiRequest('POST', '/api/contact', data);
+      console.log('Contact form submission successful:', response);
+      
       toast({
         title: 'Message sent',
         description: 'Your message has been sent successfully. We will get back to you soon.',
         variant: 'default',
       });
       form.reset();
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Contact form submission error:', error);
+      
+      // Extract error message if available
+      const errorMessage = error?.response?.data?.message || 
+                          error?.response?.data?.error || 
+                          error?.message || 
+                          'There was an error sending your message';
+      
       toast({
         title: 'Error',
-        description: 'There was an error sending your message. Please try again.',
+        description: `${errorMessage}. Please try again.`,
         variant: 'destructive',
       });
     }
