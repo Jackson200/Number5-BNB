@@ -60,7 +60,7 @@ const NW200: React.FC = () => {
                   </div>
                   <div className="ml-4">
                     <h4 className="font-bold text-xl">2025 NW200 Race Week</h4>
-                    <p>May 11-17, 2025 – Book early to secure your accommodation for this popular event!</p>
+                    <p>May 5th - 10th, 2025 – Book early to secure your accommodation for this popular event!</p>
                   </div>
                 </div>
                 
