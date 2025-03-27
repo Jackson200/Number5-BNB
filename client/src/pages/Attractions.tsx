@@ -4,7 +4,7 @@ import { attractions } from '@/lib/attractions';
 import AttractionCard from '@/components/AttractionCard';
 import { Link } from 'wouter';
 import { MapPin } from 'lucide-react';
-import sunriseImage from '@assets/Back Bedroom Sunrise 16.01.2025.jpeg';
+import portstewartStrandImage from '@assets/premium_photo-1742560561466-c2c5f1854930.avif';
 import kingRoomImage from '@assets/King Room for Business Card.jpeg';
 import frontHouseImage from '@assets/Front of house for business card.jpeg';
 import sunsetBeachImage from '@assets/sunset_beach_view.png';
@@ -74,8 +74,8 @@ const Attractions: React.FC = () => {
                   className="rounded-lg shadow-lg w-full h-48 object-cover"
                 />
                 <img 
-                  src={sunriseImage} 
-                  alt="Bedroom with sunrise view" 
+                  src={portstewartStrandImage} 
+                  alt="Portstewart Strand Beach" 
                   className="rounded-lg shadow-lg w-full h-48 object-cover"
                 />
                 <img 

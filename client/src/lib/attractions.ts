@@ -3,7 +3,7 @@ import giantsCausewayImage from '@assets/patrick-metzdorf-xyQnsGRmeNQ-unsplash.j
 import ropeImage from '@assets/k-mitch-hodge-kRZF4n8Eeyw-unsplash.jpg';
 import bushmillsImage from '@assets/k-mitch-hodge-ehwSXFRfeVQ-unsplash.jpg';
 import golfImage from '@assets/matt-aylward-Nmh-pEBRt2Y-unsplash.jpg';
-import sunriseImage from '@assets/Back Bedroom Sunrise 16.01.2025.jpeg';
+import portstewartStrandImage from '@assets/premium_photo-1742560561466-c2c5f1854930.avif';
 import frontHouseImage from '@assets/Front of house for business card.jpeg';
 import sunsetBeachImage from '@assets/sunset_beach_view.png';
 
@@ -48,7 +48,7 @@ export const attractions: Attraction[] = [
     id: '5',
     name: "Portstewart Strand",
     description: "A stunning two-mile stretch of golden sand and rolling dunes, perfect for relaxing walks and beach activities.",
-    image: sunriseImage,
+    image: portstewartStrandImage,
     distance: "3 km",
     travelTime: "5 min drive",
     url: "https://www.nationaltrust.org.uk/visit/northern-ireland/portstewart-strand"
