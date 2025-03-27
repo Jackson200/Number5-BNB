@@ -4,7 +4,7 @@ import { rooms } from '@/lib/rooms';
 import RoomCard from '@/components/RoomCard';
 import { Bed, Bath, Wifi, Tv, Coffee, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import sunsetHeroImage from '@assets/sunset_rooms_hero.png';
+import sunsetHeroImage from '@assets/image_1743112966285.png';
 
 const Rooms: React.FC = () => {
   return (

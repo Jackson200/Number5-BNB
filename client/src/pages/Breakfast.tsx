@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '@/components/Hero';
 import { Link } from 'wouter';
 import { Check } from 'lucide-react';
-import breakfastImage from '@assets/Breakfast in sunroom 10.01.2025.jpeg';
+import breakfastImage from '@assets/image_1743112809328.png';
 
 interface BreakfastOption {
   title: string;

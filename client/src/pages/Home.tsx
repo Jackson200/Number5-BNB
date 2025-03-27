@@ -12,7 +12,7 @@ import { Bed, Utensils, MapPin, Check, Star, Award, Clock, MapPinned, Waves } fr
 import businessCardFront from '@assets/Number5_business_card_v5_FRONT.png';
 import frontHouseImage from '@assets/Front of house for business card.jpeg';
 import drivewayImage from '@assets/Driveway from Front Door 03.02.2025 for Business Card.jpeg';
-import seaViewImg from '@assets/image_1743111166414.png';
+import seaViewImg from '@assets/image_1743112733338.png';
 
 const Home: React.FC = () => {
   return (

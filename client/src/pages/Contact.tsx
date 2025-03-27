@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '@/components/Hero';
 import ContactForm from '@/components/ContactForm';
 import { MapPin, Phone, Mail, Globe, Instagram, Facebook } from 'lucide-react';
-import seaViewRoomImg from '@assets/image_1743110259402.png';
+import seaViewRoomImg from '@assets/image_1743112809328.png';
 
 const Contact: React.FC = () => {
   return (

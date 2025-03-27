@@ -1,9 +1,12 @@
 import React from 'react';
 import Hero from '@/components/Hero';
 import { Card, CardContent } from '@/components/ui/card';
-import seaViewImg from '@assets/image_1743111166414.png';
+import seaViewImg from '@assets/image_1743112733338.png';
 import halloweenDippersImg from '@assets/image_1743111122368.png';
 import christmasDippersImg from '@assets/image_1743111136090.png';
+import stPatricksDayImg from '@assets/image_1743112733338.png';
+import sunriseDipImg from '@assets/image_1743112966285.png';
+import wavesActionImg from '@assets/image_1743112903378.png';
 
 const DailyDip: React.FC = () => {
   return (
@@ -32,6 +35,36 @@ const DailyDip: React.FC = () => {
               <Card className="overflow-hidden shadow-lg">
                 <div className="aspect-w-16 aspect-h-9 relative h-64">
                   <img 
+                    src={stPatricksDayImg} 
+                    alt="St. Patrick's Day sea dipping group" 
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">St. Patrick's Day Dip</h3>
+                  <p>Embrace the Irish spirit with our St. Patrick's Day themed dip - green costumes, great craic, and the bracing Atlantic to wake you up!</p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden shadow-lg">
+                <div className="aspect-w-16 aspect-h-9 relative h-64">
+                  <img 
+                    src={sunriseDipImg} 
+                    alt="Sunrise sea dipping group" 
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">Sunrise Dipping</h3>
+                  <p>Experience the magic of dawn with our sunrise dips - watch the town lights twinkle as you embrace the refreshing morning waves.</p>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              <Card className="overflow-hidden shadow-lg">
+                <div className="aspect-w-16 aspect-h-9 relative h-64">
+                  <img 
                     src={halloweenDippersImg} 
                     alt="Halloween sea dipping group" 
                     className="object-cover w-full h-full"
@@ -43,6 +76,22 @@ const DailyDip: React.FC = () => {
                 </CardContent>
               </Card>
 
+              <Card className="overflow-hidden shadow-lg">
+                <div className="aspect-w-16 aspect-h-9 relative h-64">
+                  <img 
+                    src={wavesActionImg} 
+                    alt="Dippers in the Atlantic waves" 
+                    className="object-cover w-full h-full"
+                  />
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">Braving the Waves</h3>
+                  <p>Feel the exhilaration as you plunge into the Atlantic waves, a truly invigorating experience that will awaken all your senses!</p>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <Card className="overflow-hidden shadow-lg">
                 <div className="aspect-w-16 aspect-h-9 relative h-64">
                   <img 
