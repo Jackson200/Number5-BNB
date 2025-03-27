@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '@/components/Hero';
 import { Card, CardContent } from '@/components/ui/card';
-import seaViewImg from '@assets/image_1743112733338.png';
+import seaViewImg from '@assets/image_1743112903378.png';
 import halloweenDippersImg from '@assets/image_1743111122368.png';
 import christmasDippersImg from '@assets/image_1743111136090.png';
 import stPatricksDayImg from '@assets/image_1743112733338.png';

@@ -4,7 +4,7 @@ import { Link } from 'wouter';
 import { MapPin, Calendar, AlertTriangle, CheckCircle2, Clock } from 'lucide-react';
 import frontHouseImage from '@assets/Front of house for business card.jpeg';
 import drivewayImage from '@assets/Driveway from Front Door 03.02.2025 for Business Card.jpeg';
-import racingHelmetImage from '@assets/premium_photo-1680132275249-0b2a0415236a.avif';
+import racingHelmetImage from '@assets/racing_helmet.png';
 
 const NW200: React.FC = () => {
   return (
