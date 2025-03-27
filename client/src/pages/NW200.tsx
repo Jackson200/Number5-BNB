@@ -2,12 +2,14 @@ import React from 'react';
 import Hero from '@/components/Hero';
 import { Link } from 'wouter';
 import { MapPin, Calendar, AlertTriangle, CheckCircle2, Clock } from 'lucide-react';
+import frontHouseImage from '@assets/Front of house for business card.jpeg';
+import drivewayImage from '@assets/Driveway from Front Door 03.02.2025 for Business Card.jpeg';
 
 const NW200: React.FC = () => {
   return (
     <>
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1590128969775-e31770596f74?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+        backgroundImage={frontHouseImage}
         title="NW200 Race Accommodation"
         subtitle="Perfect Base for Race Spectators"
       />
@@ -26,8 +28,8 @@ const NW200: React.FC = () => {
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
               <img 
-                src="https://images.unsplash.com/photo-1590128969775-e31770596f74?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" 
-                alt="NW200 motorcycle race" 
+                src={drivewayImage} 
+                alt="Number 5 Driveway - NW200 accommodation" 
                 className="rounded-lg shadow-lg w-full object-cover max-h-[500px]"
               />
             </div>

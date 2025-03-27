@@ -4,12 +4,15 @@ import { attractions } from '@/lib/attractions';
 import AttractionCard from '@/components/AttractionCard';
 import { Link } from 'wouter';
 import { MapPin } from 'lucide-react';
+import sunriseImage from '@assets/Back Bedroom Sunrise 16.01.2025.jpeg';
+import kingRoomImage from '@assets/King Room for Business Card.jpeg';
+import frontHouseImage from '@assets/Front of house for business card.jpeg';
 
 const Attractions: React.FC = () => {
   return (
     <>
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1564401381696-9285af63d3ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+        backgroundImage={frontHouseImage}
         title="Explore the Causeway Coast"
         subtitle="Discover Northern Ireland's Treasures"
       />
@@ -64,23 +67,23 @@ const Attractions: React.FC = () => {
             <div className="md:w-1/2">
               <div className="grid grid-cols-2 gap-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1566131807516-0de7efd36c1a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
-                  alt="Dunluce Castle" 
+                  src={kingRoomImage} 
+                  alt="King Room at Number 5" 
                   className="rounded-lg shadow-lg w-full h-48 object-cover"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1543871089-429cb6d5b40d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
-                  alt="Carrick-a-Rede Rope Bridge" 
+                  src={sunriseImage} 
+                  alt="Bedroom with sunrise view" 
                   className="rounded-lg shadow-lg w-full h-48 object-cover"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1526285849917-e1d532c2f617?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
-                  alt="Portstewart Strand" 
+                  src={frontHouseImage} 
+                  alt="Number 5 Front View" 
                   className="rounded-lg shadow-lg w-full h-48 object-cover"
                 />
                 <img 
-                  src="https://images.unsplash.com/photo-1550793685-c889bdc48ce0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
-                  alt="Royal Portrush Golf Club" 
+                  src={kingRoomImage} 
+                  alt="King Room at Number 5" 
                   className="rounded-lg shadow-lg w-full h-48 object-cover"
                 />
               </div>
