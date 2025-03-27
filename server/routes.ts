@@ -31,6 +31,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         text: `
           Name: ${validatedData.name}
           Email: ${validatedData.email}
+          Phone: ${validatedData.phone || 'Not provided'}
           Subject: ${validatedData.subject}
           
           Message:
@@ -40,6 +41,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           <h2>New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${validatedData.name}</p>
           <p><strong>Email:</strong> ${validatedData.email}</p>
+          <p><strong>Phone:</strong> ${validatedData.phone || 'Not provided'}</p>
           <p><strong>Subject:</strong> ${validatedData.subject}</p>
           <p><strong>Message:</strong></p>
           <p>${validatedData.message.replace(/\n/g, '<br>')}</p>

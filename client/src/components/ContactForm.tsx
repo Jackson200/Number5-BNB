@@ -9,23 +9,19 @@ import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { apiRequest } from '@/lib/queryClient';
 import { useToast } from '@/hooks/use-toast';
+import { contactSchema, type ContactFormData } from '@shared/schema';
 
-const formSchema = z.object({
-  name: z.string().min(2, { message: 'Name must be at least 2 characters' }),
-  email: z.string().email({ message: 'Please enter a valid email address' }),
-  subject: z.string().min(1, { message: 'Please select a subject' }),
-  message: z.string().min(10, { message: 'Message must be at least 10 characters' }),
-});
-
-type FormValues = z.infer<typeof formSchema>;
+// Using the imported contactSchema
+type FormValues = ContactFormData;
 
 const ContactForm: React.FC = () => {
   const { toast } = useToast();
   const form = useForm<FormValues>({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(contactSchema),
     defaultValues: {
       name: '',
       email: '',
+      phone: '',
       subject: '',
       message: '',
     },
@@ -87,6 +83,20 @@ const ContactForm: React.FC = () => {
                 <FormLabel className="block text-sm font-bold mb-2">Email Address</FormLabel>
                 <FormControl>
                   <Input {...field} type="email" className="w-full p-3 border border-gray-300 rounded-md" />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel className="block text-sm font-bold mb-2">Phone Number (Optional)</FormLabel>
+                <FormControl>
+                  <Input {...field} type="tel" className="w-full p-3 border border-gray-300 rounded-md" />
                 </FormControl>
                 <FormMessage />
               </FormItem>
