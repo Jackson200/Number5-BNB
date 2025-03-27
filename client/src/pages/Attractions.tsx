@@ -8,12 +8,13 @@ import sunriseImage from '@assets/Back Bedroom Sunrise 16.01.2025.jpeg';
 import kingRoomImage from '@assets/King Room for Business Card.jpeg';
 import frontHouseImage from '@assets/Front of house for business card.jpeg';
 import sunsetBeachImage from '@assets/sunset_beach_view.png';
+import giantsCausewayImage from '@assets/giants-causeway-7227160_1280.jpg';
 
 const Attractions: React.FC = () => {
   return (
     <>
       <Hero 
-        backgroundImage={frontHouseImage}
+        backgroundImage={giantsCausewayImage}
         title="Explore the Causeway Coast"
         subtitle="Discover Northern Ireland's Treasures"
       />
