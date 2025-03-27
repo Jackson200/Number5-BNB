@@ -146,16 +146,13 @@ const NW200: React.FC = () => {
                 </p>
                 <ul className="space-y-2">
                   <li>
-                    <span className="font-bold">Start/Finish Line:</span> 10 min drive
+                    <span className="font-bold">Start/Finish Line:</span> 5 min drive
                   </li>
                   <li>
-                    <span className="font-bold">York Corner:</span> 5 min drive
+                    <span className="font-bold">York Corner:</span> 60 second walk
                   </li>
                   <li>
                     <span className="font-bold">University Corner:</span> 8 min drive
-                  </li>
-                  <li>
-                    <span className="font-bold">Mill Road:</span> 12 min drive
                   </li>
                   <li>
                     <span className="font-bold">Metropole:</span> 7 min drive
