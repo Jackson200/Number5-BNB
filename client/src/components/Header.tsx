@@ -24,44 +24,30 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link href="/">
-              <a className="text-2xl font-bold text-primary font-['Playfair_Display']">
-                Number <span className="text-[#E63946]">5</span>
-              </a>
+            <Link href="/" className="text-2xl font-bold text-primary font-['Playfair_Display']">
+              Number <span className="text-[#E63946]">5</span>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/">
-              <a className={`font-medium transition duration-150 ${isActive('/') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
-                Home
-              </a>
+            <Link href="/" className={`font-medium transition duration-150 ${isActive('/') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
+              Home
             </Link>
-            <Link href="/rooms">
-              <a className={`font-medium transition duration-150 ${isActive('/rooms') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
-                Rooms
-              </a>
+            <Link href="/rooms" className={`font-medium transition duration-150 ${isActive('/rooms') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
+              Rooms
             </Link>
-            <Link href="/breakfast">
-              <a className={`font-medium transition duration-150 ${isActive('/breakfast') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
-                Breakfast
-              </a>
+            <Link href="/breakfast" className={`font-medium transition duration-150 ${isActive('/breakfast') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
+              Breakfast
             </Link>
-            <Link href="/nw200">
-              <a className={`font-medium transition duration-150 ${isActive('/nw200') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
-                NW200
-              </a>
+            <Link href="/nw200" className={`font-medium transition duration-150 ${isActive('/nw200') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
+              NW200
             </Link>
-            <Link href="/attractions">
-              <a className={`font-medium transition duration-150 ${isActive('/attractions') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
-                Local Area
-              </a>
+            <Link href="/attractions" className={`font-medium transition duration-150 ${isActive('/attractions') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
+              Local Area
             </Link>
-            <Link href="/contact">
-              <a className={`font-medium transition duration-150 ${isActive('/contact') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
-                Contact
-              </a>
+            <Link href="/contact" className={`font-medium transition duration-150 ${isActive('/contact') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
+              Contact
             </Link>
           </nav>
           
@@ -89,53 +75,47 @@ const Header = () => {
         {isMenuOpen && (
           <nav className="md:hidden pb-4">
             <div className="flex flex-col space-y-4">
-              <Link href="/">
-                <a 
-                  className={`font-medium ${isActive('/') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
-                  onClick={closeMenu}
-                >
-                  Home
-                </a>
+              <Link 
+                href="/" 
+                className={`font-medium ${isActive('/') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
+                onClick={closeMenu}
+              >
+                Home
               </Link>
-              <Link href="/rooms">
-                <a 
-                  className={`font-medium ${isActive('/rooms') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
-                  onClick={closeMenu}
-                >
-                  Rooms
-                </a>
+              <Link 
+                href="/rooms" 
+                className={`font-medium ${isActive('/rooms') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
+                onClick={closeMenu}
+              >
+                Rooms
               </Link>
-              <Link href="/breakfast">
-                <a 
-                  className={`font-medium ${isActive('/breakfast') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
-                  onClick={closeMenu}
-                >
-                  Breakfast
-                </a>
+              <Link 
+                href="/breakfast" 
+                className={`font-medium ${isActive('/breakfast') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
+                onClick={closeMenu}
+              >
+                Breakfast
               </Link>
-              <Link href="/nw200">
-                <a 
-                  className={`font-medium ${isActive('/nw200') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
-                  onClick={closeMenu}
-                >
-                  NW200
-                </a>
+              <Link 
+                href="/nw200" 
+                className={`font-medium ${isActive('/nw200') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
+                onClick={closeMenu}
+              >
+                NW200
               </Link>
-              <Link href="/attractions">
-                <a 
-                  className={`font-medium ${isActive('/attractions') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
-                  onClick={closeMenu}
-                >
-                  Local Area
-                </a>
+              <Link 
+                href="/attractions" 
+                className={`font-medium ${isActive('/attractions') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
+                onClick={closeMenu}
+              >
+                Local Area
               </Link>
-              <Link href="/contact">
-                <a 
-                  className={`font-medium ${isActive('/contact') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
-                  onClick={closeMenu}
-                >
-                  Contact
-                </a>
+              <Link 
+                href="/contact" 
+                className={`font-medium ${isActive('/contact') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
+                onClick={closeMenu}
+              >
+                Contact
               </Link>
               <a 
                 href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 

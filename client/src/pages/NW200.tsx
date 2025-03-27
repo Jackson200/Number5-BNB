@@ -288,10 +288,8 @@ const NW200: React.FC = () => {
               >
                 Book NW200 Accommodation
               </a>
-              <Link href="/contact">
-                <a className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-md font-bold text-lg transition duration-150">
-                  Contact Us About NW200
-                </a>
+              <Link href="/contact" className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-md font-bold text-lg transition duration-150">
+                Contact Us About NW200
               </Link>
             </div>
           </div>
