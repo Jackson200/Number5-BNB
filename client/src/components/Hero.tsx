@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-40"></div>
+        <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
       
       <div className="absolute inset-0 flex items-center justify-center">

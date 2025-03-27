@@ -7,9 +7,9 @@ const Contact: React.FC = () => {
   return (
     <>
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1557127275-f8b5ba93e24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+        backgroundImage="/sea-view-room.png" 
         title="Contact Us"
-        subtitle="We're Here to Help"
+        subtitle="Wake Up to Sea Views"
       />
 
       <section className="py-16 bg-white">
