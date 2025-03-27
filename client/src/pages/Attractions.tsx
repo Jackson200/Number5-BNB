@@ -7,6 +7,7 @@ import { MapPin } from 'lucide-react';
 import sunriseImage from '@assets/Back Bedroom Sunrise 16.01.2025.jpeg';
 import kingRoomImage from '@assets/King Room for Business Card.jpeg';
 import frontHouseImage from '@assets/Front of house for business card.jpeg';
+import sunsetBeachImage from '@assets/sunset_beach_view.png';
 
 const Attractions: React.FC = () => {
   return (
@@ -77,13 +78,13 @@ const Attractions: React.FC = () => {
                   className="rounded-lg shadow-lg w-full h-48 object-cover"
                 />
                 <img 
-                  src={frontHouseImage} 
-                  alt="Number 5 Front View" 
+                  src={sunsetBeachImage} 
+                  alt="Sunset over Portstewart Beach" 
                   className="rounded-lg shadow-lg w-full h-48 object-cover"
                 />
                 <img 
-                  src={kingRoomImage} 
-                  alt="King Room at Number 5" 
+                  src={frontHouseImage} 
+                  alt="Number 5 Front View" 
                   className="rounded-lg shadow-lg w-full h-48 object-cover"
                 />
               </div>

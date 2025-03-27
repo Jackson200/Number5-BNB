@@ -4,12 +4,13 @@ import { Link } from 'wouter';
 import { MapPin, Calendar, AlertTriangle, CheckCircle2, Clock } from 'lucide-react';
 import frontHouseImage from '@assets/Front of house for business card.jpeg';
 import drivewayImage from '@assets/Driveway from Front Door 03.02.2025 for Business Card.jpeg';
+import racingHelmetImage from '@assets/racing_helmet.png';
 
 const NW200: React.FC = () => {
   return (
     <>
       <Hero 
-        backgroundImage={frontHouseImage}
+        backgroundImage={racingHelmetImage}
         title="NW200 Race Accommodation"
         subtitle="Perfect Base for Race Spectators"
       />
@@ -225,6 +226,50 @@ const NW200: React.FC = () => {
         </div>
       </section>
 
+      <section className="py-16 bg-[#F1FAEE]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 font-['Playfair_Display'] text-primary text-center">
+              NW200 Race Highlights
+            </h2>
+            
+            <div className="bg-white p-8 rounded-lg shadow-md">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                <div className="md:w-1/2">
+                  <img 
+                    src={racingHelmetImage}
+                    alt="Racing helmet at Number 5 with sea view" 
+                    className="rounded-lg shadow-md w-full h-auto"
+                  />
+                </div>
+                
+                <div className="md:w-1/2">
+                  <h3 className="text-2xl font-bold mb-4 font-['Playfair_Display'] text-primary">Experience the Action</h3>
+                  <p className="mb-4">
+                    The North West 200 is one of the world's fastest road races, drawing thousands of spectators and top international riders every year.
+                  </p>
+                  <p className="mb-6">
+                    Watch some of the thrilling race action from previous years to get a taste of what to expect during race week.
+                  </p>
+                  
+                  <a 
+                    href="https://www.facebook.com/61571984107725/videos/pcb.24006520992284027/1180110026314736" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center bg-[#E63946] hover:bg-[#E63946]/90 text-white px-6 py-3 rounded-md font-bold transition duration-150"
+                  >
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Watch Race Video on Facebook
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
