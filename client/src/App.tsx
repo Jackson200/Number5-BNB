@@ -8,6 +8,7 @@ import Breakfast from "./pages/Breakfast";
 import NW200 from "./pages/NW200";
 import Attractions from "./pages/Attractions";
 import Contact from "./pages/Contact";
+import DailyDip from "./pages/DailyDip";
 import NotFound from "./pages/not-found";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/nw200" component={NW200} />
           <Route path="/attractions" component={Attractions} />
           <Route path="/contact" component={Contact} />
+          <Route path="/daily-dip" component={DailyDip} />
           <Route component={NotFound} />
         </Switch>
       </Layout>

@@ -8,10 +8,11 @@ import ReviewCard from '@/components/ReviewCard';
 import AttractionCard from '@/components/AttractionCard';
 import BookingWidget from '@/components/BookingWidget';
 import { Link } from 'wouter';
-import { Bed, Utensils, MapPin, Check, Star, Award, Clock, MapPinned } from 'lucide-react';
+import { Bed, Utensils, MapPin, Check, Star, Award, Clock, MapPinned, Waves } from 'lucide-react';
 import businessCardFront from '@assets/Number5_business_card_v5_FRONT.png';
 import frontHouseImage from '@assets/Front of house for business card.jpeg';
 import drivewayImage from '@assets/Driveway from Front Door 03.02.2025 for Business Card.jpeg';
+import seaViewImg from '@assets/image_1743111166414.png';
 
 const Home: React.FC = () => {
   return (
@@ -53,6 +54,48 @@ const Home: React.FC = () => {
               </div>
               <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">Prime Location</h3>
               <p className="text-[#293241]">Perfectly situated on the stunning Causeway Coast with easy access to beaches, attractions, and the NW200 race route.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Daily Dip Section */}
+      <section className="py-16 bg-primary text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2">
+              <div className="relative">
+                <img 
+                  src={seaViewImg} 
+                  alt="Morning sea view in Portstewart" 
+                  className="w-full h-auto rounded-lg shadow-lg object-cover aspect-video"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg flex items-end p-6">
+                  <h3 className="text-white text-2xl font-bold font-['Playfair_Display']">Experience the North Atlantic</h3>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-1/2">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                  <Waves className="text-white" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold font-['Playfair_Display']">Daily Dip</h2>
+              </div>
+              <p className="text-lg mb-6">
+                Join us for a refreshing early morning dip in the North Atlantic, just 2 miles away at beautiful Portstewart Beach.
+              </p>
+              <p className="text-lg mb-6">
+                Our host will accompany you and provide gloves, shoes, dry robe, and towels - just bring your own costume or trunks!
+              </p>
+              <p className="text-lg mb-6">
+                It's the perfect way to kick-start your day with an invigorating plunge before returning for a hearty breakfast.
+              </p>
+              <Link href="/daily-dip">
+                <a className="inline-block bg-white text-primary hover:bg-white/90 px-6 py-3 rounded-md font-bold transition duration-150">
+                  Learn More About The Daily Dip
+                </a>
+              </Link>
             </div>
           </div>
         </div>

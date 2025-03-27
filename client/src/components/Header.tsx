@@ -40,6 +40,9 @@ const Header = () => {
             <Link href="/breakfast" className={`font-medium transition duration-150 ${isActive('/breakfast') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
               Breakfast
             </Link>
+            <Link href="/daily-dip" className={`font-medium transition duration-150 ${isActive('/daily-dip') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
+              Daily Dip
+            </Link>
             <Link href="/nw200" className={`font-medium transition duration-150 ${isActive('/nw200') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}>
               NW200
             </Link>
@@ -95,6 +98,13 @@ const Header = () => {
                 onClick={closeMenu}
               >
                 Breakfast
+              </Link>
+              <Link 
+                href="/daily-dip" 
+                className={`font-medium ${isActive('/daily-dip') ? 'text-[#E63946]' : 'text-primary hover:text-[#E63946]'}`}
+                onClick={closeMenu}
+              >
+                Daily Dip
               </Link>
               <Link 
                 href="/nw200" 
