@@ -2,12 +2,13 @@ import React from 'react';
 import Hero from '@/components/Hero';
 import ContactForm from '@/components/ContactForm';
 import { MapPin, Phone, Mail, Globe, Instagram, Facebook } from 'lucide-react';
+import seaViewRoomImg from '@assets/image_1743110259402.png';
 
 const Contact: React.FC = () => {
   return (
     <>
       <Hero 
-        backgroundImage="/sea-view-room.png" 
+        backgroundImage={seaViewRoomImg} 
         title="Contact Us"
         subtitle="Wake Up to Sea Views"
       />
