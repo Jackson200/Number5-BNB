@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '@/components/Hero';
 import { Link } from 'wouter';
 import { Check } from 'lucide-react';
+import breakfastImage from '@assets/Breakfast in sunroom 10.01.2025.jpeg';
 
 interface BreakfastOption {
   title: string;
@@ -31,7 +32,7 @@ const Breakfast: React.FC = () => {
   return (
     <>
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1533920379810-6bedac9e9f65?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+        backgroundImage={breakfastImage} 
         title="Breakfast Experience"
         subtitle="Start Your Day Deliciously"
       />
@@ -49,24 +50,9 @@ const Breakfast: React.FC = () => {
             <div className="md:w-1/2 order-2 md:order-1">
               <div className="grid grid-cols-2 gap-4">
                 <img 
-                  src="https://images.unsplash.com/photo-1533920379810-6bedac9e9f65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
-                  alt="Gourmet breakfast spread" 
-                  className="rounded-lg shadow-lg w-full h-48 object-cover"
-                />
-                <img 
-                  src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
-                  alt="Fresh breakfast options" 
-                  className="rounded-lg shadow-lg w-full h-48 object-cover"
-                />
-                <img 
-                  src="https://images.unsplash.com/photo-1490457843367-34b21b6ccd85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
-                  alt="Breakfast with a view" 
-                  className="rounded-lg shadow-lg w-full h-48 object-cover"
-                />
-                <img 
-                  src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
-                  alt="Healthy breakfast options" 
-                  className="rounded-lg shadow-lg w-full h-48 object-cover"
+                  src={breakfastImage} 
+                  alt="Breakfast at Number 5" 
+                  className="rounded-lg shadow-lg w-full h-48 object-cover col-span-2"
                 />
               </div>
             </div>

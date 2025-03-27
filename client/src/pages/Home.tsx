@@ -10,12 +10,14 @@ import BookingWidget from '@/components/BookingWidget';
 import { Link } from 'wouter';
 import { Bed, Utensils, MapPin, Check, Star, Award, Clock, MapPinned } from 'lucide-react';
 import businessCardFront from '@assets/Number5_business_card_v5_FRONT.png';
+import frontHouseImage from '@assets/Front of house for business card.jpeg';
+import drivewayImage from '@assets/Driveway from Front Door 03.02.2025 for Business Card.jpeg';
 
 const Home: React.FC = () => {
   return (
     <>
       <Hero 
-        backgroundImage="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" 
+        backgroundImage={frontHouseImage} 
         title={<>Welcome to <span className="text-[#E63946]">Number 5</span></>}
         subtitle="Seaside Bed and Breakfast"
         showRating={true}
@@ -91,8 +93,8 @@ const Home: React.FC = () => {
             <div className="md:w-1/2">
               <div className="relative">
                 <img 
-                  src="https://images.unsplash.com/photo-1557127275-f8b5ba93e24e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60" 
-                  alt="Coastal view from Number 5" 
+                  src={drivewayImage} 
+                  alt="Driveway view from Number 5" 
                   className="w-full h-[500px] object-cover rounded-lg shadow-lg"
                 />
                 <div className="absolute -bottom-6 -right-6 p-4 bg-white rounded-lg shadow-lg max-w-xs">

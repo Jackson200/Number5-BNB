@@ -1,4 +1,5 @@
 import { Attraction } from './types';
+import sunriseImage from '@assets/Back Bedroom Sunrise 16.01.2025.jpeg';
 
 export const attractions: Attraction[] = [
   {
@@ -41,7 +42,7 @@ export const attractions: Attraction[] = [
     id: '5',
     name: "Portstewart Strand",
     description: "A stunning two-mile stretch of golden sand and rolling dunes, perfect for relaxing walks and beach activities.",
-    image: "https://images.unsplash.com/photo-1526285849917-e1d532c2f617?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
+    image: sunriseImage,
     distance: "3 km",
     travelTime: "5 min drive",
     url: "https://www.nationaltrust.org.uk/visit/northern-ireland/portstewart-strand"
