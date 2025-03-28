@@ -12,9 +12,9 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
   return (
     <Card className="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-200 transition-transform duration-300 hover:scale-[1.02]">
       <div className="relative pb-[66.25%]">
-        <img 
-          src={room.image} 
-          alt={room.name} 
+        <img
+          src={room.image}
+          alt={room.name}
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">
@@ -24,7 +24,7 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
       <CardContent className="p-6">
         <div className="flex justify-between items-start mb-2">
           <h3 className="text-xl font-bold font-['Playfair_Display']">{room.name}</h3>
-          <span className="text-[#E63946] font-bold">£{room.price}/night</span>
+          <span className="text-[#E63946] font-bold hidden">£{room.price}/night</span>
         </div>
         <div className="flex items-center space-x-4 mb-4 text-sm">
           <div className="flex items-center">
@@ -44,10 +44,10 @@ const RoomCard: React.FC<RoomCardProps> = ({ room }) => {
             </Badge>
           ))}
         </div>
-        <a 
-          href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 
-          target="_blank" 
-          rel="noopener noreferrer" 
+        <a
+          href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
+          target="_blank"
+          rel="noopener noreferrer"
           className="block text-center bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-md font-bold transition duration-150"
         >
           Check Availability

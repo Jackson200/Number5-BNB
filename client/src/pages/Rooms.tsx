@@ -18,7 +18,7 @@ const Rooms: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-['Playfair_Display'] text-primary">Luxury Accommodations</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 font-['Playfair_Display'] text-primary">Luxury Accommodation</h2>
             <p className="text-lg max-w-3xl mx-auto">
               Experience the perfect blend of comfort and style in our beautifully appointed rooms, each designed to provide a relaxing retreat after a day exploring the stunning Causeway Coast.
             </p>
