@@ -9,22 +9,22 @@ interface HeroProps {
   showButtons?: boolean;
 }
 
-const Hero: React.FC<HeroProps> = ({ 
-  backgroundImage, 
-  title, 
-  subtitle, 
+const Hero: React.FC<HeroProps> = ({
+  backgroundImage,
+  title,
+  subtitle,
   showRating = false,
-  showButtons = false 
+  showButtons = false
 }) => {
   return (
     <section className="relative h-[80vh] bg-gray-900">
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>
       </div>
-      
+
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="text-center px-4 md:px-8 max-w-4xl">
           <div className="mb-8 inline-block bg-white/90 px-6 py-4 rounded-lg">
@@ -35,31 +35,29 @@ const Hero: React.FC<HeroProps> = ({
               <p className="mt-2 text-xl md:text-2xl text-[#457B9D] font-['Playfair_Display']">{subtitle}</p>
             )}
           </div>
-          
+
           <p className="text-lg md:text-xl text-white mb-8 drop-shadow-lg">
             Luxurious accommodation with breathtaking sea views in Portstewart, Northern Ireland
           </p>
-          
+
           {showButtons && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 
-                target="_blank" 
+              <a
+                href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#E63946] hover:bg-[#E63946]/90 text-white px-8 py-3 rounded-md font-bold text-lg transition duration-150"
               >
                 Check Availability
               </a>
-              <Link href="/rooms">
-                <a className="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-md font-bold text-lg transition duration-150">
+              <Link href="/rooms" className="bg-white hover:bg-gray-100 text-primary px-8 py-3 rounded-md font-bold text-lg transition duration-150">
                   View Our Rooms
-                </a>
               </Link>
             </div>
           )}
         </div>
       </div>
-      
+
       {showRating && (
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <div className="flex items-center space-x-4 bg-white/90 px-4 py-2 rounded-full">
