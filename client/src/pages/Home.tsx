@@ -12,13 +12,16 @@ import { Bed, Utensils, MapPin, Check, Star, Award, Clock, MapPinned, Waves } fr
 import businessCardFront from '@assets/Number5_business_card_v5_FRONT.png';
 import frontHouseImage from '@assets/Front of house for business card.jpeg';
 import drivewayImage from '@assets/Driveway from Front Door 03.02.2025 for Business Card.jpeg';
-import seaViewImg from '@assets/image_1743112733338.png';
+import seaViewImg from '@assets/image_1743112903378.png';
+import hisAndHers from '@assets/his_and_hers.jpg';
+import sunsetHeroImage from '@assets/sunset_rooms_hero.png';
+
 
 const Home: React.FC = () => {
   return (
     <>
-      <Hero 
-        backgroundImage={frontHouseImage} 
+      <Hero
+        backgroundImage={frontHouseImage}
         title={<>Welcome to <span className="text-[#E63946]">Number 5</span></>}
         subtitle="Seaside Bed and Breakfast"
         showRating={true}
@@ -37,7 +40,7 @@ const Home: React.FC = () => {
               <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">Luxury Rooms</h3>
               <p className="text-[#293241]">Three beautifully appointed en-suite rooms, two with panoramic sea views and one with a peaceful garden view.</p>
             </div>
-            
+
             {/* Feature 2 */}
             <div className="bg-[#F1FAEE] rounded-lg p-6 flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -46,7 +49,7 @@ const Home: React.FC = () => {
               <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">Gourmet Breakfast</h3>
               <p className="text-[#293241]">Start your day with our delicious homemade breakfast featuring local ingredients and customized to your preferences.</p>
             </div>
-            
+
             {/* Feature 3 */}
             <div className="bg-[#F1FAEE] rounded-lg p-6 flex flex-col items-center text-center">
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
@@ -95,9 +98,9 @@ const Home: React.FC = () => {
             </div>
             <div className="md:w-1/2">
               <div className="relative">
-                <img 
-                  src={drivewayImage} 
-                  alt="Driveway view from Number 5" 
+                <img
+                  src={hisAndHers}
+                  alt="Feel at home at Number 5"
                   className="w-full h-[500px] object-cover rounded-lg shadow-lg"
                 />
                 <div className="absolute -bottom-6 -right-6 p-4 bg-white rounded-lg shadow-lg max-w-xs">
@@ -120,14 +123,14 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-['Playfair_Display'] text-primary">Our Rooms</h2>
             <p className="text-lg max-w-3xl mx-auto">Experience comfort and elegance in our beautifully appointed en-suite rooms, each offering a unique perspective of our stunning surroundings.</p>
           </div>
-          
+
           {/* Room Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {rooms.map(room => (
               <RoomCard key={room.id} room={room} />
             ))}
           </div>
-          
+
           <div className="mt-12 text-center">
             <Link href="/rooms">
               <a className="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-bold transition duration-150">
@@ -147,7 +150,7 @@ const Home: React.FC = () => {
               <p className="text-lg mb-8">
                 Experience the beauty of the Causeway Coast from the comfort of Number 5. Check availability and book your stay directly through our Booking.com integration.
               </p>
-              
+
               <div className="space-y-6 mb-8">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center mt-1">
@@ -177,12 +180,12 @@ const Home: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-6">
-                <a 
-                  href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-[#E63946] hover:bg-[#E63946]/90 text-white px-6 py-3 rounded-md font-bold transition duration-150"
                 >
                   Book on Booking.com
@@ -192,7 +195,7 @@ const Home: React.FC = () => {
                 </p>
               </div>
             </div>
-            
+
             <div className="md:w-1/2">
               <BookingWidget />
             </div>
@@ -212,18 +215,18 @@ const Home: React.FC = () => {
             </div>
             <p className="text-lg">9.8/10 Exceptional based on 83 reviews</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {reviews.slice(0, 3).map(review => (
               <ReviewCard key={review.id} review={review} />
             ))}
           </div>
-          
+
           <div className="mt-8 flex justify-center">
-            <a 
-              href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center text-primary hover:text-[#E63946] transition duration-150"
             >
               <span className="font-bold">Read all reviews on Booking.com</span>
@@ -241,9 +244,9 @@ const Home: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="md:w-1/2">
               <div className="relative">
-                <img 
-                  src={seaViewImg} 
-                  alt="Morning sea view in Portstewart" 
+                <img
+                  src={seaViewImg}
+                  alt="Morning sea view in Portstewart"
                   className="w-full h-auto rounded-lg shadow-lg object-cover aspect-video"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg flex items-end p-6">
@@ -284,13 +287,13 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-['Playfair_Display'] text-primary">Explore the Causeway Coast</h2>
             <p className="text-lg max-w-3xl mx-auto">Discover stunning landscapes, historic sites, and vibrant local culture, all within easy reach of Number 5.</p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {attractions.slice(0, 3).map(attraction => (
               <AttractionCard key={attraction.id} attraction={attraction} />
             ))}
           </div>
-          
+
           <div className="mt-12 text-center">
             <Link href="/attractions">
               <a className="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-md font-bold transition duration-150">
@@ -308,7 +311,7 @@ const Home: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 font-['Playfair_Display'] text-primary">Find Us</h2>
             <p className="text-lg max-w-3xl mx-auto">Conveniently located on the Portrush Road in Portstewart, with easy access to the coastline and local attractions.</p>
           </div>
-          
+
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
               <div className="bg-white p-6 rounded-lg shadow-md">
@@ -319,7 +322,7 @@ const Home: React.FC = () => {
                     <p className="mt-2">5 Portrush Road, Portstewart, BT55 7DB</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start mb-4">
                   <Clock className="w-6 h-6 text-[#E63946] mr-3 mt-1" />
                   <div>
@@ -329,7 +332,7 @@ const Home: React.FC = () => {
                     <p className="text-sm mt-1">(Early/late check-in by arrangement)</p>
                   </div>
                 </div>
-                
+
                 <div className="mt-6">
                   <Link href="/contact">
                     <a className="inline-block bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-md font-bold transition duration-150">
@@ -339,15 +342,15 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="md:w-1/2">
               <div className="rounded-lg overflow-hidden shadow-lg h-[400px]">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2289.0731799423455!2d-6.723361223387166!3d55.18532797928239!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDExJzA3LjIiTiA2wrA0Myc0My4zIlc!5e0!3m2!1sen!2sus!4v1616682936358!5m2!1sen!2sus" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.8450729663036!2d-6.7126682!3d55.188532199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486024762937e299%3A0x4dfa89f7a790104f!2s5%20Portrush%20Rd%2C%20Portstewart%20BT55%207DB%2C%20UK!5e0!3m2!1sen!2sus!4v1743110446227!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
                   loading="lazy"
                   title="Number 5 B&B location map"
                 ></iframe>
@@ -361,18 +364,18 @@ const Home: React.FC = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center">
-            <img 
-              src={businessCardFront} 
-              alt="Number 5 B&B Business Card" 
-              className="max-w-md w-full rounded-lg shadow-lg mb-8" 
+            <img
+              src={businessCardFront}
+              alt="Number 5 B&B Business Card"
+              className="max-w-md w-full rounded-lg shadow-lg mb-8"
             />
             <div className="text-center max-w-xl">
               <h3 className="text-2xl font-bold mb-4 font-['Playfair_Display'] text-primary">Ready to experience Number 5?</h3>
               <p className="text-lg mb-6">Book your stay today and discover why our guests keep coming back to our seaside retreat.</p>
-              <a 
-                href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-[#E63946] hover:bg-[#E63946]/90 text-white px-8 py-3 rounded-md font-bold text-lg transition duration-150"
               >
                 Book Your Stay

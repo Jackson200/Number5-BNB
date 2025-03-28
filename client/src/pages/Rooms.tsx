@@ -4,13 +4,13 @@ import { rooms } from '@/lib/rooms';
 import RoomCard from '@/components/RoomCard';
 import { Bed, Bath, Wifi, Tv, Coffee, CheckCircle2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import sunsetHeroImage from '@assets/image_1743112966285.png';
+import sunsetHeroImage from '@assets/sunset_rooms_hero.png';
 
 const Rooms: React.FC = () => {
   return (
     <>
-      <Hero 
-        backgroundImage={sunsetHeroImage} 
+      <Hero
+        backgroundImage={sunsetHeroImage}
         title="Our Rooms"
         subtitle="Comfort & Elegance by the Sea"
       />
@@ -23,7 +23,7 @@ const Rooms: React.FC = () => {
               Experience the perfect blend of comfort and style in our beautifully appointed rooms, each designed to provide a relaxing retreat after a day exploring the stunning Causeway Coast.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {rooms.map(room => (
               <RoomCard key={room.id} room={room} />
@@ -32,7 +32,7 @@ const Rooms: React.FC = () => {
 
           <div className="bg-[#F1FAEE] rounded-lg p-8 shadow-md">
             <h3 className="text-2xl font-bold mb-6 font-['Playfair_Display'] text-primary text-center">All Rooms Include</h3>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
@@ -43,7 +43,7 @@ const Rooms: React.FC = () => {
                   <p>Quality mattresses and premium bedding for a peaceful night's sleep.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
                   <Bath className="text-primary" />
@@ -53,7 +53,7 @@ const Rooms: React.FC = () => {
                   <p>Modern private bathrooms with complimentary toiletries and fresh towels.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
                   <Wifi className="text-primary" />
@@ -63,7 +63,7 @@ const Rooms: React.FC = () => {
                   <p>Complimentary high-speed wireless internet access throughout your stay.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
                   <Tv className="text-primary" />
@@ -73,7 +73,7 @@ const Rooms: React.FC = () => {
                   <p>Flat-screen smart TVs with access to streaming services.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
                   <Coffee className="text-primary" />
@@ -83,7 +83,7 @@ const Rooms: React.FC = () => {
                   <p>In-room tea and coffee making facilities with local treats.</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start">
                 <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
                   <CheckCircle2 className="text-primary" />
@@ -105,9 +105,9 @@ const Rooms: React.FC = () => {
             <p className="text-lg max-w-3xl mx-auto mb-8">
               Check availability and secure your preferred dates through our Booking.com integration for the best rates and flexible cancellation options.
             </p>
-            <a 
-              href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 
-              target="_blank" 
+            <a
+              href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#E63946] hover:bg-[#E63946]/90 text-white px-8 py-3 rounded-md font-bold text-lg transition duration-150"
             >

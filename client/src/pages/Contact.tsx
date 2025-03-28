@@ -2,13 +2,13 @@ import React from 'react';
 import Hero from '@/components/Hero';
 import ContactForm from '@/components/ContactForm';
 import { MapPin, Phone, Mail, Globe, Instagram, Facebook } from 'lucide-react';
-import seaViewRoomImg from '@assets/image_1743112809328.png';
+import seaViewRoomImg from '@assets/image_1743110259402.png';
 
 const Contact: React.FC = () => {
   return (
     <>
-      <Hero 
-        backgroundImage={seaViewRoomImg} 
+      <Hero
+        backgroundImage={seaViewRoomImg}
         title="Contact Us"
         subtitle="Wake Up to Sea Views"
       />
@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
               <p className="text-lg mb-8">
                 Have questions or special requests? We're here to help make your stay at Number 5 as perfect as possible. Feel free to reach out using any of the methods below.
               </p>
-              
+
               <div className="space-y-6 mb-8">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
                     <p>5 Portrush Road, Portstewart, BT55 7DB</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
                     <Phone className="text-primary" />
@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
                     <p><a href="tel:07811389458" className="hover:text-[#E63946]">07811 389458</a></p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
                     <Mail className="text-primary" />
@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
                     <p><a href="mailto:Number5AtlanticView@gmail.com" className="hover:text-[#E63946]">Number5AtlanticView@gmail.com</a></p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mt-1">
                     <Globe className="text-primary" />
@@ -63,29 +63,29 @@ const Contact: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="flex space-x-4">
-                <a 
-                  href="https://www.instagram.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition duration-150"
                   aria-label="Instagram"
                 >
                   <Instagram className="text-primary" />
                 </a>
-                <a 
-                  href="https://www.facebook.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition duration-150"
                   aria-label="Facebook"
                 >
                   <Facebook className="text-primary" />
                 </a>
-                <a 
-                  href="https://api.whatsapp.com/send?phone=07811389458" 
-                  target="_blank" 
+                <a
+                  href="https://api.whatsapp.com/send?phone=07811389458"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary/20 transition duration-150"
                   aria-label="WhatsApp"
@@ -96,20 +96,20 @@ const Contact: React.FC = () => {
                 </a>
               </div>
             </div>
-            
+
             <div className="md:w-1/2">
               <ContactForm />
             </div>
           </div>
-          
+
           <div className="mt-12">
             <div className="rounded-lg overflow-hidden h-[400px] shadow-lg">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.8450729663036!2d-6.7126682!3d55.188532199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486024762937e299%3A0x4dfa89f7a790104f!2s5%20Portrush%20Rd%2C%20Portstewart%20BT55%207DB%2C%20UK!5e0!3m2!1sen!2sus!4v1743110446227!5m2!1sen!2sus" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2287.8450729663036!2d-6.7126682!3d55.188532199999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486024762937e299%3A0x4dfa89f7a790104f!2s5%20Portrush%20Rd%2C%20Portstewart%20BT55%207DB%2C%20UK!5e0!3m2!1sen!2sus!4v1743110446227!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Number 5 B&B location map"
@@ -125,34 +125,34 @@ const Contact: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 font-['Playfair_Display'] text-primary text-center">
               Frequently Asked Questions
             </h2>
-            
+
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">What are your check-in and check-out times?</h3>
                 <p>Check-in is from 3:00 PM to 8:00 PM, and check-out is by 11:00 AM. Early or late check-in may be possible with prior arrangement.</p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">Is breakfast included in the room rate?</h3>
                 <p>Yes, a full breakfast is included in your room rate. Please let us know if you have any dietary requirements.</p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">Do you have parking available?</h3>
                 <p>Yes, we offer free parking for our guests at Number 5.</p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">Can I book directly or only through Booking.com?</h3>
                 <p>You can book through Booking.com or contact us directly by phone or email. We're happy to accommodate your booking preferences.</p>
               </div>
-              
+
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-bold mb-2 font-['Playfair_Display']">What is your cancellation policy?</h3>
                 <p>Our standard cancellation policy allows free cancellation up to 48 hours before arrival. Please check your booking confirmation for specific details.</p>
               </div>
             </div>
-            
+
             <div className="text-center mt-8">
               <p className="text-lg">Still have questions? Feel free to <a href="mailto:Number5AtlanticView@gmail.com" className="text-[#E63946] font-bold hover:underline">contact us</a>.</p>
             </div>

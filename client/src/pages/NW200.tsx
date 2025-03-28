@@ -2,14 +2,15 @@ import React from 'react';
 import Hero from '@/components/Hero';
 import { Link } from 'wouter';
 import { MapPin, Calendar, AlertTriangle, CheckCircle2, Clock } from 'lucide-react';
-import frontHouseImage from '@assets/Front of house for business card.jpeg';
+// import frontHouseImage from '@assets/Front of house for business card.jpeg';
 import drivewayImage from '@assets/Driveway from Front Door 03.02.2025 for Business Card.jpeg';
 import racingHelmetImage from '@assets/racing_helmet.png';
+import roadBikersImage from '@assets/North_West_200_Juniper_2009.jpg';
 
 const NW200: React.FC = () => {
   return (
     <>
-      <Hero 
+      <Hero
         backgroundImage={racingHelmetImage}
         title="NW200 Race Accommodation"
         subtitle="Perfect Base for Race Spectators"
@@ -28,13 +29,13 @@ const NW200: React.FC = () => {
 
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
-              <img 
-                src={drivewayImage} 
-                alt="Number 5 Driveway - NW200 accommodation" 
+              <img
+                src={roadBikersImage}
+                alt="The view from Number 5's garden"
                 className="rounded-lg shadow-lg w-full object-cover max-h-[500px]"
               />
             </div>
-            
+
             <div className="md:w-1/2">
               <h3 className="text-2xl md:text-3xl font-bold mb-6 font-['Playfair_Display'] text-primary">
                 Ideal Location for Race Spectators
@@ -42,7 +43,7 @@ const NW200: React.FC = () => {
               <p className="mb-6">
                 Number 5 is perfectly situated for the NW200 motorcycle road race, offering convenient access to the circuit while providing a comfortable retreat after an exciting day of racing.
               </p>
-              
+
               <div className="space-y-6 mb-8">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center mt-1">
@@ -53,7 +54,7 @@ const NW200: React.FC = () => {
                     <p>Just minutes from key viewing spots along the NW200 circuit.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center mt-1">
                     <Calendar className="text-primary h-4 w-4" />
@@ -63,7 +64,7 @@ const NW200: React.FC = () => {
                     <p>May 5th - 10th, 2025 – Book early to secure your accommodation for this popular event!</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary">
@@ -83,14 +84,14 @@ const NW200: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="bg-[#F1FAEE] p-6 rounded-lg shadow-md">
                 <h4 className="font-bold text-xl mb-2">Early Booking Recommended</h4>
                 <p className="mb-4">Our rooms fill quickly during race week. Book now to avoid disappointment!</p>
-                <a 
-                  href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-block bg-[#E63946] hover:bg-[#E63946]/90 text-white px-6 py-3 rounded-md font-bold transition duration-150"
                 >
                   Check NW200 Availability
@@ -107,7 +108,7 @@ const NW200: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 font-['Playfair_Display'] text-center">
               NW200 Visitor Information
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-white/10 p-6 rounded-lg">
                 <div className="flex items-center mb-4">
@@ -135,7 +136,7 @@ const NW200: React.FC = () => {
                   Schedule subject to change. Please check the <a href="https://www.northwest200.org" target="_blank" rel="noopener noreferrer" className="underline">official NW200 website</a> for current information.
                 </p>
               </div>
-              
+
               <div className="bg-white/10 p-6 rounded-lg">
                 <div className="flex items-center mb-4">
                   <MapPin className="w-6 h-6 mr-3" />
@@ -162,7 +163,7 @@ const NW200: React.FC = () => {
                   Ask us for local insights on the best viewing spots!
                 </p>
               </div>
-              
+
               <div className="bg-white/10 p-6 rounded-lg">
                 <div className="flex items-center mb-4">
                   <AlertTriangle className="w-6 h-6 mr-3" />
@@ -186,7 +187,7 @@ const NW200: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              
+
               <div className="bg-white/10 p-6 rounded-lg">
                 <div className="flex items-center mb-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-3">
@@ -229,17 +230,17 @@ const NW200: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-8 font-['Playfair_Display'] text-primary text-center">
               NW200 Race Highlights
             </h2>
-            
+
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex flex-col md:flex-row items-center gap-8">
                 <div className="md:w-1/2">
-                  <img 
-                    src={racingHelmetImage}
-                    alt="Racing helmet at Number 5 with sea view" 
+                  <img
+                    src={drivewayImage}
+                    alt="Ample parking at Number 5 with sea view"
                     className="rounded-lg shadow-md w-full h-auto"
                   />
                 </div>
-                
+
                 <div className="md:w-1/2">
                   <h3 className="text-2xl font-bold mb-4 font-['Playfair_Display'] text-primary">Experience the Action</h3>
                   <p className="mb-4">
@@ -248,11 +249,11 @@ const NW200: React.FC = () => {
                   <p className="mb-6">
                     Watch some of the thrilling race action from previous years to get a taste of what to expect during race week.
                   </p>
-                  
-                  <a 
-                    href="https://www.facebook.com/61571984107725/videos/pcb.24006520992284027/1180110026314736" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+
+                  <a
+                    href="https://www.facebook.com/61571984107725/videos/pcb.24006520992284027/1180110026314736"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center bg-[#E63946] hover:bg-[#E63946]/90 text-white px-6 py-3 rounded-md font-bold transition duration-150"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -266,7 +267,7 @@ const NW200: React.FC = () => {
           </div>
         </div>
       </section>
-      
+
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
@@ -277,10 +278,10 @@ const NW200: React.FC = () => {
               Don't miss out on the perfect location to experience the North West 200. Our rooms book up quickly for race week, so we recommend securing your accommodation well in advance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 
-                target="_blank" 
-                rel="noopener noreferrer" 
+              <a
+                href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-[#E63946] hover:bg-[#E63946]/90 text-white px-8 py-3 rounded-md font-bold text-lg transition duration-150"
               >
                 Book NW200 Accommodation
