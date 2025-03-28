@@ -141,8 +141,50 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Booking Section */}
+      {/* Daily Dip Section */}
       <section className="py-16 bg-primary text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            <div className="md:w-1/2">
+              <div className="relative">
+                <img
+                  src={seaViewImg}
+                  alt="Morning sea view in Portstewart"
+                  className="w-full h-auto rounded-lg shadow-lg object-cover aspect-video"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg flex items-end p-6">
+                  <h3 className="text-white text-2xl font-bold font-['Playfair_Display']">Experience the North Atlantic</h3>
+                </div>
+              </div>
+            </div>
+            <div className="md:w-1/2">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
+                  <Waves className="text-white" />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold font-['Playfair_Display']">Daily Dip</h2>
+              </div>
+              <p className="text-lg mb-6">
+                Join us for a refreshing early morning dip in the North Atlantic, just 2 miles away at beautiful Portstewart Beach.
+              </p>
+              <p className="text-lg mb-6">
+                Our host will accompany you and provide gloves, shoes, dry robe, and towels - just bring your own costume or trunks!
+              </p>
+              <p className="text-lg mb-6">
+                It's the perfect way to kick-start your day with an invigorating plunge before returning for a hearty breakfast.
+              </p>
+              <Link href="/daily-dip">
+                <a className="inline-block bg-white text-primary hover:bg-white/90 px-6 py-3 rounded-md font-bold transition duration-150">
+                  Learn More About The Daily Dip
+                </a>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Booking Section */}
+      <section className="py-16 bg-primary text-white hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row gap-12 items-center">
             <div className="md:w-1/2">
@@ -234,48 +276,6 @@ const Home: React.FC = () => {
                 <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
             </a>
-          </div>
-        </div>
-      </section>
-
-      {/* Daily Dip Section */}
-      <section className="py-16 bg-primary text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-12">
-            <div className="md:w-1/2">
-              <div className="relative">
-                <img
-                  src={seaViewImg}
-                  alt="Morning sea view in Portstewart"
-                  className="w-full h-auto rounded-lg shadow-lg object-cover aspect-video"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-lg flex items-end p-6">
-                  <h3 className="text-white text-2xl font-bold font-['Playfair_Display']">Experience the North Atlantic</h3>
-                </div>
-              </div>
-            </div>
-            <div className="md:w-1/2">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mr-4">
-                  <Waves className="text-white" />
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold font-['Playfair_Display']">Daily Dip</h2>
-              </div>
-              <p className="text-lg mb-6">
-                Join us for a refreshing early morning dip in the North Atlantic, just 2 miles away at beautiful Portstewart Beach.
-              </p>
-              <p className="text-lg mb-6">
-                Our host will accompany you and provide gloves, shoes, dry robe, and towels - just bring your own costume or trunks!
-              </p>
-              <p className="text-lg mb-6">
-                It's the perfect way to kick-start your day with an invigorating plunge before returning for a hearty breakfast.
-              </p>
-              <Link href="/daily-dip">
-                <a className="inline-block bg-white text-primary hover:bg-white/90 px-6 py-3 rounded-md font-bold transition duration-150">
-                  Learn More About The Daily Dip
-                </a>
-              </Link>
-            </div>
           </div>
         </div>
       </section>
