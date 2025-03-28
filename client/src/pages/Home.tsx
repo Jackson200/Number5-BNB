@@ -327,7 +327,7 @@ const Home: React.FC = () => {
                   <Clock className="w-6 h-6 text-[#E63946] mr-3 mt-1" />
                   <div>
                     <h3 className="text-xl font-bold font-['Playfair_Display']">Check-in & Check-out</h3>
-                    <p className="mt-2">Check-in: 3:00 PM - 8:00 PM</p>
+                    <p className="mt-2">Check-in: 3:00 PM - 6:00 PM</p>
                     <p>Check-out: By 11:00 AM</p>
                     <p className="text-sm mt-1">(Early/late check-in by arrangement)</p>
                   </div>
