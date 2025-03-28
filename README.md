@@ -65,11 +65,61 @@ npm run dev
 
 This will start both the backend Express server and the frontend Vite development server. The application will be available at `http://localhost:5000`.
 
+### Platform-Specific Commands
+
+#### On macOS/Linux:
+```bash
+NODE_ENV=development npm run dev
+```
+
+#### On Windows (Command Prompt):
+```bash
+set NODE_ENV=development && npm run dev
+```
+
+#### On Windows (PowerShell):
+```bash
+$env:NODE_ENV="development"; npm run dev
+```
+
+Setting the NODE_ENV environment variable explicitly can help resolve some common connectivity issues.
+
 ### Cross-Platform Development
 
 For local development on macOS, Windows, and Linux machines, the server is configured to use `localhost` as the host in development mode. If you encounter any issues with port binding on macOS (such as an `ENOTSUP` error), the application will automatically use the appropriate configuration.
 
 For production environments, the server will bind to all network interfaces (0.0.0.0) by default.
+
+### Troubleshooting
+
+#### 403 Forbidden Errors
+If you encounter a 403 "Access Denied" error when accessing localhost:5000, try these solutions:
+
+1. **Clear browser cache and cookies**: Browser security features might block localhost access based on previous sessions.
+
+2. **Try a different browser**: Some browsers have stricter security settings than others.
+
+3. **Disable browser extensions**: Security or ad-blocking extensions can sometimes interfere with local development servers.
+
+4. **Run with elevated permissions**: On Windows, try running your terminal/command prompt as Administrator. On macOS/Linux, you could use `sudo` (though this is generally not recommended for npm).
+
+5. **Check firewall settings**: Ensure your firewall is not blocking localhost connections.
+
+6. **Use the IP address directly**: 
+   - Try accessing `http://127.0.0.1:5000` instead of `http://localhost:5000`
+   - You can force the server to bind to the IP address by setting the USE_IP environment variable:
+     ```bash
+     # On macOS/Linux
+     USE_IP=true npm run dev
+     
+     # On Windows (Command Prompt)
+     set USE_IP=true && npm run dev
+     
+     # On Windows (PowerShell)
+     $env:USE_IP="true"; npm run dev
+     ```
+
+The server has CORS configured to allow cross-origin requests in development mode, which should help prevent most access issues.
 
 ## Project Structure
 

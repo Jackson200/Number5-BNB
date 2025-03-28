@@ -6,6 +6,19 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// Set up CORS for local development
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  
+  if (req.method === 'OPTIONS') {
+    return res.status(200).end();
+  }
+  
+  next();
+});
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
@@ -60,10 +73,21 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = process.env.PORT ? parseInt(process.env.PORT) : 5000;
-  const host = process.env.NODE_ENV === 'production' ? '0.0.0.0' : 'localhost';
+  
+  // For local development, you can use 127.0.0.1 instead of localhost
+  // to potentially avoid 403 errors with certain browser security settings
+  const host = process.env.NODE_ENV === 'production' 
+    ? '0.0.0.0' 
+    : (process.env.USE_IP === 'true' ? '127.0.0.1' : 'localhost');
   
   // Use a simpler configuration that works on all platforms
   server.listen(port, host, () => {
     log(`serving on ${host}:${port}`);
+    
+    // Log out access URLs for convenience
+    if (process.env.NODE_ENV !== 'production') {
+      log(`Access via localhost: http://localhost:${port}`);
+      log(`Access via IP: http://127.0.0.1:${port}`);
+    }
   });
 })();

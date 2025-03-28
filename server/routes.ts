@@ -6,6 +6,22 @@ import { z } from "zod";
 import { contactSchema, breakfastRequestSchema, bookingInquirySchema } from "@shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Add CORS headers for local development to prevent 403 errors
+  app.use((req, res, next) => {
+    // Allow requests from all origins in development mode
+    if (process.env.NODE_ENV !== 'production') {
+      res.header('Access-Control-Allow-Origin', '*');
+      res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+      res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+      
+      // Handle preflight requests
+      if (req.method === 'OPTIONS') {
+        return res.status(200).end();
+      }
+    }
+    
+    next();
+  });
   // Contact form submission endpoint
   app.post("/api/contact", async (req, res) => {
     try {
