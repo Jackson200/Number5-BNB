@@ -65,6 +65,12 @@ npm run dev
 
 This will start both the backend Express server and the frontend Vite development server. The application will be available at `http://localhost:5000`.
 
+### Cross-Platform Development
+
+For local development on macOS, Windows, and Linux machines, the server is configured to use `localhost` as the host in development mode. If you encounter any issues with port binding on macOS (such as an `ENOTSUP` error), the application will automatically use the appropriate configuration.
+
+For production environments, the server will bind to all network interfaces (0.0.0.0) by default.
+
 ## Project Structure
 
 ```
