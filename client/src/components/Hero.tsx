@@ -41,7 +41,7 @@ const Hero: React.FC<HeroProps> = ({
           </p>
 
           {showButtons && (
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className={`flex flex-col sm:flex-row gap-4 justify-center ${showRating ? 'pb-24 md:pb-0' : ''}`}>
               <a
                 href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
                 target="_blank"
@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({
               </svg>
               <span className="font-bold">9.8</span>
             </div>
-            <span className="text-sm">Exceptional • 83 reviews</span>
+            <span className="text-sm">Exceptional</span>
           </div>
         </div>
       )}

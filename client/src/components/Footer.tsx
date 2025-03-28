@@ -16,7 +16,7 @@ const Footer = () => {
               <span>NITB Approved Accommodation</span>
             </div>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
@@ -46,9 +46,9 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <a 
-                  href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html" 
-                  target="_blank" 
+                <a
+                  href="https://www.booking.com/hotel/gb/number-5-causeway-coast-and-glens.en-gb.html"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-[#E63946] transition duration-150"
                 >
@@ -57,7 +57,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-bold mb-4">Contact</h4>
             <ul className="space-y-2">
@@ -75,31 +75,31 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h4 className="text-lg font-bold mb-4">Follow Us</h4>
             <div className="flex space-x-4 mb-6">
-              <a 
-                href="https://www.instagram.com" 
-                target="_blank" 
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition duration-150"
+                className="hidden w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition duration-150"
                 aria-label="Instagram"
               >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a 
-                href="https://www.facebook.com" 
-                target="_blank" 
+              <a
+                href="https://www.facebook.com/groups/430615650301226/user/61571984107725/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition duration-150"
                 aria-label="Facebook"
               >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a 
-                href="https://api.whatsapp.com/send?phone=07811389458" 
-                target="_blank" 
+              <a
+                href="https://api.whatsapp.com/send?phone=07811389458"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition duration-150"
                 aria-label="WhatsApp"
@@ -114,11 +114,11 @@ const Footer = () => {
                 <rect width="24" height="24" rx="4" fill="#003580"/>
                 <path d="M18.5 7.5L12 15L5.5 7.5" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
-              <span>9.8 Exceptional (83 reviews)</span>
+              <span>9.8 Exceptional</span>
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-white/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p>&copy; {new Date().getFullYear()} Number 5 Bed and Breakfast. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 md:mt-0">

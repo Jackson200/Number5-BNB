@@ -213,7 +213,7 @@ const Home: React.FC = () => {
                 <Star key={i} className="text-yellow-500 fill-yellow-500" />
               ))}
             </div>
-            <p className="text-lg">9.8/10 Exceptional based on 83 reviews</p>
+            <p className="text-lg">9.8/10 Exceptional</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
